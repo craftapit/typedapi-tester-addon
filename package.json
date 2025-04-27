@@ -18,7 +18,7 @@
     "test:scenarios": "ts-node examples/run-test-scenarios.ts",
     "test:ollama": "ts-node -r dotenv/config examples/test-typescript.ts dotenv_config_path=tests/.env",
     "test:stories": "ts-node -r dotenv/config tests/run-test-stories.ts dotenv_config_path=tests/.env",
-    "test:cli": "node -r dotenv/config ../craft-a-tester/bin/craft-a-tester.js run-all tests/stories --recursive --config craft-a-tester.json dotenv_config_path=tests/.env"
+    "test:cli": "node -r dotenv/config ../tester/bin/craft-a-tester.js run-all tests/stories --recursive --config craft-a-tester.json dotenv_config_path=tests/.env"
   },
   "keywords": [
     "testing",
@@ -32,12 +32,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/craftapit/craft-a-tester-typedapi.git"
+    "url": "git+https://github.com/craftapit/typedapi-tester-addon.git"
   },
   "bugs": {
-    "url": "https://github.com/craftapit/craft-a-tester-typedapi/issues"
+    "url": "https://github.com/craftapit/typedapi-tester-addon/issues"
   },
-  "homepage": "https://github.com/craftapit/craft-a-tester-typedapi#readme",
+  "homepage": "https://github.com/craftapit/typedapi-tester-addon#readme",
   "dependencies": {
     "typescript": "^5.0.0"
   },
