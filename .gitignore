@@ -1,0 +1,12 @@
+dist/
+node_modules/
+package-lock.json
+bin/
+.env
+tests/.env
+.DS_Store
+*.log
+coverage/
+.craft-a-tester/
+.aider*
+craft-a-tester.json

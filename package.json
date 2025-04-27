@@ -1,0 +1,54 @@
+{
+  "name": "craft-a-tester-typedapi",
+  "version": "0.1.0",
+  "description": "TypedAPI testing capabilities for Craft-a-Tester",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "prepublish": "npm run build",
+    "run:example": "ts-node examples/integration-example.ts",
+    "test:contract": "ts-node examples/test-contract.ts",
+    "test:typescript": "ts-node examples/test-typescript.ts",
+    "test:scenarios": "ts-node examples/run-test-scenarios.ts",
+    "test:ollama": "ts-node -r dotenv/config examples/test-typescript.ts dotenv_config_path=tests/.env",
+    "test:stories": "ts-node -r dotenv/config tests/run-test-stories.ts dotenv_config_path=tests/.env",
+    "test:cli": "node -r dotenv/config ../craft-a-tester/bin/craft-a-tester.js run-all tests/stories --recursive --config craft-a-tester.json dotenv_config_path=tests/.env"
+  },
+  "keywords": [
+    "testing",
+    "typedapi",
+    "craft-a-tester",
+    "addon",
+    "typescript",
+    "contracts"
+  ],
+  "author": "CraftAPIT <info@craftapit.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/craftapit/craft-a-tester-typedapi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/craftapit/craft-a-tester-typedapi/issues"
+  },
+  "homepage": "https://github.com/craftapit/craft-a-tester-typedapi#readme",
+  "dependencies": {
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "craft-a-tester": "^0.1.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^18.15.0",
+    "craft-a-tester": "^0.1.2",
+    "dotenv": "^16.5.0",
+    "eslint": "^8.38.0",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.1"
+  }
+}
