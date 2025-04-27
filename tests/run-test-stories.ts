@@ -2,7 +2,7 @@
  * Test stories runner for craft-a-tester-typedapi addon.
  */
 import * as path from 'path';
-import { createTestRunner } from 'craft-a-tester';
+import { createTestRunner } from '@craftapit/tester';
 import { TypedAPIAdapter, TypedAPIAddon } from '../src';
 
 async function runTestStories() {

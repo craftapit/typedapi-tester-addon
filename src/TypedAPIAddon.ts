@@ -1,5 +1,5 @@
 import { TypedAPIAdapter, TypedAPIAdapterConfig } from './TypedAPIAdapter';
-import { AddonCapability, Addon, CapabilityRegistry } from 'craft-a-tester';
+import { AddonCapability, Addon, CapabilityRegistry } from '@craftapit/tester';
 
 /**
  * TypedAPI Addon for Craft-a-Tester
@@ -8,7 +8,7 @@ export class TypedAPIAddon implements Addon {
   /**
    * Addon name
    */
-  public readonly name = 'craft-a-tester-typedapi';
+  public readonly name = '@craftapit/typedapi-tester-addon';
   
   /**
    * Addon version

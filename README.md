@@ -1,4 +1,4 @@
-# craft-a-tester-typedapi
+# @craftapit/typedapi-tester-addon
 
 TypedAPI testing capabilities for Craft-a-Tester, enabling contract validation, request/response validation, and mock generation.
 
@@ -20,13 +20,13 @@ This package is designed to work as part of the craftacoder monorepo using npm w
 
 ```bash
 # From the root of the monorepo
-npm install -w craft-a-tester-typedapi
+npm install -w @craftapit/typedapi-tester-addon
 ```
 
 Or install it directly:
 
 ```bash
-npm install craft-a-tester-typedapi
+npm install @craftapit/typedapi-tester-addon
 ```
 
 ## Usage
@@ -34,7 +34,7 @@ npm install craft-a-tester-typedapi
 ### Basic Usage
 
 ```typescript
-import { TypedAPIAdapter, TypedAPIAddon } from 'craft-a-tester-typedapi';
+import { TypedAPIAdapter, TypedAPIAddon } from '@craftapit/typedapi-tester-addon';
 
 // Create and initialize the TypedAPI adapter
 const adapter = new TypedAPIAdapter({
@@ -54,8 +54,8 @@ console.log(result);
 ### Integration with Craft-a-Tester
 
 ```typescript
-import { TestExecutor, CapabilityRegistry } from 'craft-a-tester';
-import { TypedAPIAddon } from 'craft-a-tester-typedapi';
+import { TestExecutor, CapabilityRegistry } from '@craftapit/tester';
+import { TypedAPIAddon } from '@craftapit/typedapi-tester-addon';
 
 // Create and initialize the test executor
 const executor = new TestExecutor();
@@ -81,7 +81,7 @@ The TypedAPI addon can be used with Craft-a-Tester's LLM-based testing capabilit
 
 ```typescript
 import { TestExecutor, CapabilityRegistry, OllamaAdapter } from 'craft-a-tester';
-import { TypedAPIAddon } from 'craft-a-tester-typedapi';
+import { TypedAPIAddon } from '@craftapit/typedapi-tester-addon';
 
 // Create and initialize the test executor
 const executor = new TestExecutor();
@@ -198,16 +198,16 @@ When working in the monorepo, use the workspace commands:
 npm run build:all
 
 # Run TypedAPI tests (from monorepo root)
-npm run test:typedapi
+npm run test:typedapi-addon
 
 # Run the integration example
-npm run run:example -w craft-a-tester-typedapi
+npm run run:example -w @craftapit/typedapi-tester-addon
 
 # Test with Ollama
-npm run test:ollama -w craft-a-tester-typedapi
+npm run test:ollama -w @craftapit/typedapi-tester-addon
 
 # Run tests with CLI
-npm run test:cli -w craft-a-tester-typedapi
+npm run test:cli -w @craftapit/typedapi-tester-addon
 ```
 
 ## License

@@ -1,4 +1,4 @@
-import { BaseAdapter } from 'craft-a-tester';
+import { BaseAdapter } from '@craftapit/tester';
 import * as path from 'path';
 import * as fs from 'fs/promises';
 import * as ts from 'typescript';

@@ -4,7 +4,7 @@ import {
   LLMAdapter, 
   CapabilityRegistry,
   ResolutionQuality
-} from 'craft-a-tester';
+} from '@craftapit/tester';
 import path from 'path';
 
 /**

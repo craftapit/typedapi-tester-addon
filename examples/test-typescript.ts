@@ -1,4 +1,4 @@
-import { TestExecutor, OllamaAdapter } from 'craft-a-tester';
+import { TestExecutor, OllamaAdapter } from '@craftapit/tester';
 import { TypedAPIAddon } from '../src';
 import * as path from 'path';
 

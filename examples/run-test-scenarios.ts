@@ -4,7 +4,7 @@ import {
   TestExecutor, 
   CapabilityRegistry, 
   OllamaAdapter 
-} from 'craft-a-tester';
+} from '@craftapit/tester';
 
 /**
  * Run TypedAPI test scenarios using Craft-a-Tester
